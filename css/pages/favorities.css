@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande","Lucida Sans Unicode", "Geneva", Verdana, sans-serif;
+}
+:root {
+    /* Declaro variables CSS con colores principales */
+    --color-theme: #FFCE30;
+    --color-active: #288BA8;
+    --color-back-active: #746AB0;
+    --color-back-inactive: #c4c6c9;
+    --color-titulos: #E83845;
+    --color-texto-blanco: #FFF;
+    --color-gradient: linear-gradient(
+    to right,
+    var(--color-theme),
+    var(--color-back-active)
+    );
+}
+
+/*SECCION PELICULAS FAVORITAS*/
+
+#sec-favorities-list {
+    padding: 60px;
+}
+
+.contenedorPeliculasFavoritas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 200px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+div.pelicula > p {
+    font-size: 12px;
+    color: var(--color-active);
+    font-family: 'Gill Sans', 'Gill Sans MT',
+    Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div.pelicula > h3 {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+div.pelicula > img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}

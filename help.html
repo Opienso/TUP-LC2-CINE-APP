@@ -7,12 +7,14 @@
   <title>TUP LC2 - TP Integrador</title>
   <!-- Estilos CSS -->
   <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/pages/help.css" />
 </head>
 
 <body>
   <header>
     <h1>
       <!--Titulo Cabecera-->
+      <img src="./img/IconoCine.png" alt="Icono Cine">
       <span>Cartelera de Cine</span>
     </h1>
     <nav>
@@ -37,22 +39,22 @@
       <!-- Sección donde se debe colocar el formulario de contacto-->
       <form>
         <!--Nombre-->
-        <div>
-          <label for="formName"><b>Nombre</b></label>
-          <input type="text" id="formName" name="formName"><br><br>
+        <div class="form">
+          <label for="formName"><b>Nombre:</b></label>
+          <input type="text" class="wide-input" id="formName" name="formName">
         </div>
         <!--Email-->
-        <div>
+        <div class="form">
           <label for="formEmail"><b>Email:</b></label>
-          <input type="text" id="formEmail" name="formEmail"><br><br>
+          <input type="text" class="wide-input" id="formEmail" name="formEmail">
         </div>
         <!--Mensaje-->
-        <div>
+        <div class="form">
           <label for="formMsj"><b>Mensaje:</b></label>
-          <textarea id="formMsj" name="formMsj"></textarea>
+          <textarea id="formMsj" class="wide-input tall-input" name="formMsj"></textarea>
         </div>
         <!--Buttons-->
-        <div>
+        <div class="botones">
           <button id="button-enviar">Enviar</button>
           <button id="button-limpiar">Limpiar</button>
         </div>
@@ -62,7 +64,6 @@
     <section id="sec-cine-result"></section>
     <!-- Sección donde se debe mostrar los mensajes de error -->
     </section>
-    <p></p>
   </main>
   <footer>
     <p>Desarrollado con ♥ - LC2</p>
