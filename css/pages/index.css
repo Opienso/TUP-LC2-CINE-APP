@@ -76,9 +76,11 @@ body{
 .contenedorPeliculas {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
     max-width: 1000px;
     margin: 0 auto;
 }
+
 
 div.pelicula > p {
     font-size: 12px;
@@ -95,6 +97,8 @@ div.pelicula > h3 {
 
 div.pelicula > img {
     width: 100%;
+    height: 300px;
+    object-fit: scale-down;
     margin-bottom: 10px;
     border-radius: 15px;
 }
@@ -129,7 +133,7 @@ div.pelicula > img {
 
 /*Estilos Generales Botones Favoritos*/
 
-.button {
+.boton_agregar {
     background: #7f8c8d;
     display: flex;
     margin: 0 auto;
@@ -142,7 +146,7 @@ div.pelicula > img {
 
 }
 
-.button a{
+.boton_agregar {
     text-align: center;
     text-decoration: none;
     color: white;
