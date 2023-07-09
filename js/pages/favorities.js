@@ -1,17 +1,5 @@
 let favoritosLS = localStorage.getItem('FAVORITOS');
 
-favoritos = JSON.parse(favoritosLS)
-
-console.log(typeof(favoritos))
-
-if (favoritos){
-    favoritos.forEach(e => {
-        
-    });
-}
-
-localStorage.setItem("FAVORITOSS", favoritos)
-
 const contenedorPeliculasFavoritas = document.getElementById("contenedorPeliculasFavoritas")
 
 const mercho = async () => {

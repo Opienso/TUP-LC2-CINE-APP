@@ -1,5 +1,16 @@
 let peliculas = []
+let favoritos = []
 let pagina = 1;
+
+let apa = localStorage.getItem("FAVORITOS")
+apa = JSON.parse(apa)
+apa = Array.from(apa)
+
+if (apa){
+    apa.forEach(coso => {
+        favoritos.push(coso)
+    })
+}
 
 ////////////////////////////////////////////////
 
@@ -64,7 +75,6 @@ function cargarPeliculas(a) {
 
 //////////////////////////////////////////
 
-let favoritos = []
 
 function botonAgregarFavorito() {
     let botones = document.getElementsByClassName("boton_agregar")
