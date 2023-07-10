@@ -37,7 +37,7 @@ const mercho = async () => {
     }else{
         mensajeWarningFavoritos.classList.remove("hidden")
         tortugaRotaRota.classList.remove("hidden")
-        botonTortuga.classList.remove("hidden")
+        botonTortuga.classList.add("hidden")
     }
 }
 
@@ -63,7 +63,6 @@ function quitarFavorito() {
             id = e.currentTarget.id
 
             borrarDiv = document.getElementsByClassName(id)
-            console.log(borrarDiv)
 
             indice = favoritosss.indexOf(id)
 
