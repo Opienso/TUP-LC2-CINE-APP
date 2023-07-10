@@ -31,9 +31,13 @@ body{
 }
 
 /*SECCION MENSAJES*/
+.hidden{
+    display: none;
+}
 
 #sec-messages{
     display: flex;
+    align-items: center;
     flex-direction: column; /*Estos es para ver como se ven lo botones nomás*/
 }
 
@@ -68,6 +72,29 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-radius: 15px;
+}
+
+.succes2 {
+    background-color: #28a745;
+    color: white;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.warning2 {
+    background-color: #ffc107;
+    color: white;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     border-radius: 15px;
 }
 
@@ -143,7 +170,6 @@ div.pelicula > img {
     width: 200px;
     box-shadow: 0px 3px 0px #373c3c;
     border-radius: 50px;
-
 }
 
 .boton_agregar {
@@ -151,6 +177,7 @@ div.pelicula > img {
     text-decoration: none;
     color: white;
     margin: 0 auto;
+    margin-bottom: 1rem;
 }
 
 .button span {           /*No entiendo esta parte .3.*/

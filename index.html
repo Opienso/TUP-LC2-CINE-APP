@@ -33,28 +33,27 @@
       <form action="">
         <label for="agregarPeli">Agregar Película Favorita por Código:</label>
         <div class="agregar">
-          <input type="text" name="agregarPeli" id="agregarPeli">
-          <button>Agregar</button>
+          <input type="number" name="agregarPeli" id="agregarPeli">
+          <button type="button" onclick="agregarPorCodigo()">Agregar</button>
         </div>
       </form>
     </section>
-    <!-- <section id="sec-messages">                                       ACÁ ESTÁN LOS MENSAJES PROFE, SI LOS DESCOMENTA SE VEN
-      <p class="succes">Película agregada con éxito</p>
-      <p class="warning">La Pelicula ingresada ya se encuentra almacenada</p>
-      <p class="error">Error: La Película seleccionada no se encuentra en la API o se produjo un error al consultar</p>
-    </section> -->
+    <section id="sec-messages">
+      <div id="contenedor-mensaje-succes" class="hidden">
+        <p class="succes">Película agregada con éxito</p>
+      </div>
+      <div id="contenedor-mensaje-warning" class="hidden">
+        <p class="warning">La Pelicula ingresada ya se encuentra almacenada</p>
+      </div>
+      <div id="contenedor-mensaje-error" class="hidden">
+        <p class="error">Error: La Película seleccionada no se encuentra en la API o se produjo un error al consultar
+        </p>
+      </div>
+    </section>
     <section id="sec_peliculas">
       <!--Seccion visualizacion de peliculas-->
       <div class="contenedorPeliculas" id="contenedorPeliculas"> <!--Contenedor grid de peliuculas-->
-        <!-- <div class="pelicula">
-          <img src="https://image.tmdb.org/t/p/w500/fcFMd3HdyX7r5gtFwVnn2qr5Yhq.jpg" alt="creed">
-          <h3>Creed III</h3>
-          <p><b>Codigo:</b>677179</p>
-          <p><b>Título original:</b>Creed III</p>
-          <p><b>Idioma original:</b>en</p>
-          <p><b>Año:</b>2023-03-01</p>
-          <button class="boton_agregar">Agegar a Favoritos</button>
-        </div> -->
+
       </div>
     </section>
     <section id="sec_paginador_peliculas">
