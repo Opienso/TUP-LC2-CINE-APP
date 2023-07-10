@@ -12,7 +12,7 @@ const mercho = async () => {
         console.log("hola desde donde no se debe")
 
         mensajeWarningFavoritos.classList.add("hidden")
-        tortugaRotaRota.classList.add("hidden")
+        // tortugaRotaRota.classList.add("hidden")
         botonTortuga.classList.add("hidden")
         for (let i = 0; i < favoritos.length; i++) {
             const respuesta = await fetch(`https://api.themoviedb.org/3/movie/${favoritos[i]}?api_key=2ed62a64b39136b9951145a470e4a689&language=es-MX`)
@@ -36,8 +36,8 @@ const mercho = async () => {
         quitarFavorito();
     }else{
         mensajeWarningFavoritos.classList.remove("hidden")
-        tortugaRotaRota.classList.remove("hidden")
-        botonTortuga.classList.add("hidden")
+        // tortugaRotaRota.classList.add("hidden")
+        botonTortuga.classList.remove("hidden")
     }
 }
 

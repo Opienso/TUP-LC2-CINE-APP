@@ -111,4 +111,5 @@ div.pelicula > img {
 
 #contenedor-tortuga {
     margin-left: 75%;
+    display: none;
 }
