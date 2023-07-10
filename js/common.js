@@ -3,10 +3,10 @@ let favoritos = []
 let pagina = 1;
 
 let apa = localStorage.getItem("FAVORITOS")
-apa = JSON.parse(apa)
-apa = Array.from(apa)
 
-if (apa){
+if (apa) {
+    apa = JSON.parse(apa)
+    apa = Array.from(apa)
     apa.forEach(coso => {
         favoritos.push(coso)
     })
